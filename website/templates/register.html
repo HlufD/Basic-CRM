@@ -3,5 +3,7 @@
   <h2>Register</h2>
   <form action="" method="POST">
     {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-secondary">Register</button>
   </form>
 {% endblock %}
